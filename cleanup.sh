@@ -17,7 +17,7 @@ fi
 
 # Python and it's package managers
 if [ "$(command -v python3)" ]; then
-  python3 -m pip cache purge
+  python3 -m pip cache purge 2>/dev/null
 fi
 
 # Rust
