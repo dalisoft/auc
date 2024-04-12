@@ -16,8 +16,8 @@ if [ "$(command -v bun)" ]; then
 fi
 
 # Python and it's package managers
-if [ "$(command -v python3)" ]; then
-  python3 -m pip cache purge 2>/dev/null
+if [ "$(command -v python3)" ] && [ "$(command -v pip3)" ]; then
+  python3 -m pip cache purge
 fi
 
 # Rust
