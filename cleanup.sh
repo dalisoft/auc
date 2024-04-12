@@ -43,7 +43,7 @@ fi
 
 # Docker
 if [ "$(command -v docker)" ]; then
-  docker image prune -a
+  docker image prune -af
 fi
 
 # Homebrew
