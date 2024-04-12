@@ -7,14 +7,13 @@ Add-Update-Cleanup scripts pack
 ### `update.sh`
 
 ```sh
-curl https://gist.github.com/dalisoft/8f2ce3b8783158b4436c847e71a395c6/raw/f7a59bad064214ffa8185c6f5e4ce8b749772aad/cleanup.sh | sh
-curl -fsSLO https://raw.githubusercontent.com/dalisoft/lint-staged-sh/master/lint-staged.sh
+curl -fsSL https://raw.githubusercontent.com/dalisoft/auc/master/update.sh | sh
 ```
 
 ### `cleanup.sh`
 
 ```sh
-curl https://gist.github.com/dalisoft/8f2ce3b8783158b4436c847e71a395c6/raw/f7a59bad064214ffa8185c6f5e4ce8b749772aad/cleanup.sh | sh
+curl -fsSL https://raw.githubusercontent.com/dalisoft/auc/master/cleanup.sh | sh
 ```
 
 ## Additional commands
