@@ -41,6 +41,6 @@ fi
 
 # Linux APT
 if [ "$(command -v apt)" ]; then
-  sudo apt update -y
-  sudo apt upgrade -y
+  sudo apt update --yes
+  sudo apt upgrade --yes
 fi

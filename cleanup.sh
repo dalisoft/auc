@@ -43,10 +43,17 @@ fi
 
 # Docker
 if [ "$(command -v docker)" ]; then
-  docker image prune -af
+  docker system prune --volumes --force
 fi
 
 # Homebrew
 if [ "$(command -v brew)" ]; then
   brew cleanup -s --prune=all
+fi
+
+# Linux APT
+if [ "$(command -v apt)" ]; then
+  sudo apt clean --yes
+  sudo apt autoclean --yes
+  sudo apt-get autoremove --yes
 fi
