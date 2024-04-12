@@ -16,7 +16,7 @@ if [ "$(command -v bun)" ]; then
 fi
 
 # Python and it's package managers
-if [ "$(command -v python3)" ]; then
+if [ "$(command -v python3)" ] && [ "$(command -v python3 -m pip)" ]; then
   python3 -m pip cache purge
 fi
 
