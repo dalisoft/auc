@@ -7,6 +7,7 @@ if [ "$(command -v yarn)" ]; then
 fi
 if [ "$(command -v npm)" ]; then
   npm cache clean --force
+  rm -rf "$(npm config get cache)/_npx"
 fi
 if [ "$(command -v pnpm)" ]; then
   pnpm store prune
